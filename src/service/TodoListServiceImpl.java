@@ -27,7 +27,9 @@ public class TodoListServiceImpl implements TodolistService {
 
     @Override
     public void addTodoList(String todo) {
-
+        TodoList todoList = new TodoList(todo);
+        todoListRepo.add(todoList);
+        System.out.println("SUCCESS MENAMBAHKAN DATA TODOLIST " + todo);
     }
 
     @Override

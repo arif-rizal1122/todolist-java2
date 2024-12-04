@@ -34,6 +34,8 @@ public class AplikasiTodoList {
         showTodoList();
     }
 
+
+
     public static void addTodoList(String todo) {
         boolean penuh = true;
         // cek apakah model penuh
