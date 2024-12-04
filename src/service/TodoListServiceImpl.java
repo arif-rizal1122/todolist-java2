@@ -4,7 +4,7 @@ import entity.TodoList;
 import repository.TodoListRepo;
 
 public class TodoListServiceImpl implements TodolistService {
-    private TodoListRepo todoListRepo;
+    public TodoListRepo todoListRepo;
 
     public TodoListServiceImpl(TodoListRepo todoListRepo) {
         this.todoListRepo = todoListRepo;
@@ -19,7 +19,7 @@ public class TodoListServiceImpl implements TodolistService {
             var todo = model[i];
             var nomor =  i + 1;
             if (todo != null){
-                System.out.println(nomor + ". " + todo);
+                System.out.println(nomor + ". " + todo.getTodo());
             }
         }
     }

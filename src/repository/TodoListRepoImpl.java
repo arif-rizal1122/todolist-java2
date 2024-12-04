@@ -3,7 +3,7 @@ package repository;
 import entity.TodoList;
 
 public class TodoListRepoImpl implements TodoListRepo{
-    private TodoList[] data = new TodoList[10];
+    public TodoList[] data = new TodoList[10];
 
 
     @Override
