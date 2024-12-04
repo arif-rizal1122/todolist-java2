@@ -43,7 +43,14 @@ public class TodoListView {
         }
     }
     public void removeTodoList(){
+        System.out.println("menghapus todolist ");
 
+        String number = InputUtil.input("menghapus todolist (x jika batal) ");
+        if (number.equals("x")){
+            // batal
+        } else {
+            todolistService.removeTodoList(Integer.valueOf(number));
+        }
     }
 
 }
